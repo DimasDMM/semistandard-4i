@@ -1,16 +1,15 @@
 # JavaScript Semi-Standard Style
-[![travis][travis-image]][travis-url]
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
 ### One Semicolon for the Dark Lord on his dark throne
 
-All the goodness of [feross/standard] with semicolons sprinkled on top.
+All the goodness of [JS Standard Style](https://github.com/standard/standard) with semicolons and 4 spaces indentation.
 
 ## Install
 
 ```bash
-npm install semistandard
+npm install semistandard-4i
 ```
 
 ## Rules
@@ -18,74 +17,63 @@ npm install semistandard
 Importantly:
 
 - **semicolons**
-- Check [feross/standard] for the rest of the rules.
+- **4 spaces indentation**
+- Check [JS Standard Style](https://github.com/standard/standard) for the rest of the rules.
 
 ## Badge
 
 Use this in one of your projects? Include one of these badges in your readme to
-let people know that your code is using the standard style.
+let people know that your code is using this code style.
 
-[![js-semistandard-style](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
-
-```markdown
-[![js-semistandard-style](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
-```
-
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
+[![js-semistandard-4i-style](https://img.shields.io/badge/JS%20Code%20Style-Semistandard%204I-brightgreen.svg)](https://github.com/DimasDMM/semistandard-4i)
 
 ```markdown
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
+[![js-semistandard-4i-style](https://img.shields.io/badge/JS%20Code%20Style-Semistandard%204I-brightgreen.svg)](https://github.com/DimasDMM/semistandard-4i)
 ```
 
 ## Usage
 
-The easiest way to use JavaScript Semi-Standard Style to check your code is to install it
+The easiest way to use this code style to check your code is to install it
 globally as a Node command line program. To do so, simply run the following command in
-your terminal (flag `-g` installs `semistandard` globally on your system, omit it if you want
+your terminal (flag `-g` installs `semistandard-4i` globally on your system, omit it if you want
 to install in the current working directory):
 
 ```bash
-npm install semistandard -g
+npm install semistandard-4i -g
 ```
 
-After you've done that you should be able to use the `semistandard` program. The simplest use
+After you've done that you should be able to use the `semistandard-4i` program. The simplest use
 case would be checking the style of all JavaScript files in the current working directory:
 
 ```
-$ semistandard
-Error: Use JavaScript Semi-Standard Style
+$ semistandard-4i
+Error: Use JS Semistandard 4I Style
   lib/torrent.js:950:11: Expected '===' and instead saw '=='.
 ```
-
-### Editor plugins
-
-- **Sublime users**: Try [SublimeLinter-contrib-semistandard](https://github.com/Flet/SublimeLinter-contrib-semistandard) for linting in your editor!
-- **Atom users** - Install [linter-js-standard](https://atom.io/packages/linter-js-standard)
-- **VSCode users** - Install [vscode-standardjs](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs)
 
 ### What you might do if you're clever
 
 1. Add it to `package.json`
 
-  ```json
-  {
-    "name": "my-cool-package",
-    "devDependencies": {
-      "semistandard": "*"
-    },
-    "scripts": {
-      "test": "semistandard && node my-normal-tests-littered-with-semicolons.js"
-    }
+```json
+{
+  "name": "my-cool-package",
+  "devDependencies": {
+    "semistandard-4i": "*"
+  },
+  "scripts": {
+    "test": "semistandard-4i && node file-with-this-style.js"
   }
-  ```
+}
+```
 
 2. Check style automatically when you run `npm test`
 
-  ```
-  $ npm test
-  Error: Code style check failed:
-    lib/torrent.js:950:11: Expected '===' and instead saw '=='.
-  ```
+```
+$ npm test
+Error: Code style check failed:
+  lib/torrent.js:950:11: Expected '===' and instead saw '=='.
+```
 
 3. Never give style feedback on a pull request again! (unless it's about semicolons)
 
@@ -95,7 +83,7 @@ babel-eslint`) and add this to your package.json:
 
 ```json
 {
-  "semistandard": {
+  "semistandard-4i": {
     "parser": "babel-eslint"
   }
 }
@@ -107,13 +95,13 @@ Install **[Syntastic][vim-1]** and add these lines to `.vimrc`:
 
 ```vim
 let g:syntastic_javascript_checkers=['standard']
-let g:syntastic_javascript_standard_exec = 'semistandard'
+let g:syntastic_javascript_standard_exec = 'semistandard-4i'
 ```
 
 For automatic formatting on save, add these two lines to `.vimrc`:
 
 ```vim
-autocmd bufwritepost *.js silent !semistandard % --fix
+autocmd bufwritepost *.js silent !semistandard-4i % --fix
 set autoread
 ```
 
@@ -121,15 +109,15 @@ set autoread
 
 ### Ignoring files
 
-Just like in `standard`, The paths `node_modules/**`, `*.min.js`, `bundle.js`, `coverage/**`, hidden files/folders
-(beginning with `.`), and all patterns in a project's root `.gitignore` file are
+Just like in `standard`, the paths `node_modules/**`, `*.min.js`, `bundle.js`, `coverage/**`, hidden files/folders
+(beginning with `.`) and all patterns in a project's root `.gitignore` file are
 automatically excluded when looking for `.js` files to check.
 
 Sometimes you need to ignore additional folders or specific minfied files. To do that, add
-a `semistandard.ignore` property to `package.json`:
+a `semistandard-4i.ignore` property to `package.json`:
 
 ```json
-"semistandard": {
+"semistandard-4i": {
   "ignore": [
     "**/out/",
     "/lib/select2/",
@@ -140,18 +128,18 @@ a `semistandard.ignore` property to `package.json`:
 ```
 
 ### Make it look `snazzy`
-If you want prettier output, just install the [`snazzy`](https://github.com/feross/snazzy) package and pipe `semistandard` to it:
+If you want prettier output, just install the [`snazzy`](https://github.com/feross/snazzy) package and pipe `semistandard-4i` to it:
 
 ```bash
 $ semistandard --verbose | snazzy
 ```
 
-See [feross/standard] for more information.
+### Future work
 
-[travis-image]: https://img.shields.io/travis/Flet/semistandard.svg?style=flat-square
-[travis-url]: https://travis-ci.org/Flet/semistandard
-[npm-image]: https://img.shields.io/npm/v/semistandard.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/semistandard
-[downloads-image]: https://img.shields.io/npm/dm/semistandard.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/semistandard
-[feross/standard]: https://github.com/feross/standard
+* Add tests with files following this code style.
+
+### Useful links
+
+* Original code style: [JS Standard Style](https://github.com/standard/standard).
+* This repository is a fork of [Flet/semistandard](https://github.com/Flet/semistandard).
+

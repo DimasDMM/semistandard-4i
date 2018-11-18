@@ -1,21 +1,21 @@
 {
-  "name": "semistandard",
-  "description": "All the goodness of `feross/standard` with semicolons sprinkled on top.",
-  "version": "13.0.0",
+  "name": "semistandard-4i",
+  "description": "All the goodness of JS Standard Style with semicolons and 4 spaces indentation.",
+  "version": "0.0.1-beta",
   "author": {
-    "email": "flettre@gmail.com",
-    "name": "Dan Flettre",
-    "url": "http://twitter.com/flettre"
+    "email": "dimas.95@hotmail.com",
+    "name": "Dimas Muñoz",
+    "url": "https://www.linkedin.com/in/dimas-munoz/"
   },
   "bin": {
-    "semistandard": "./bin/cmd.js"
+    "semistandard-4i": "./bin/cmd.js"
   },
   "bugs": {
-    "url": "https://github.com/Flet/semistandard/issues"
+    "url": "https://github.com/DimasDMM/semistandard-4i/issues"
   },
   "dependencies": {
     "eslint": "~5.4.0",
-    "eslint-config-semistandard": "13.0.0",
+    "eslint-config-semistandard": "0.0.1-beta",
     "eslint-config-standard": "12.0.0",
     "eslint-config-standard-jsx": "6.0.2",
     "eslint-plugin-import": "~2.14.0",
@@ -37,7 +37,7 @@
   "engines": {
     "node": ">=6"
   },
-  "homepage": "https://github.com/Flet/semistandard",
+  "homepage": "https://github.com/DimasDMM/semistandard-4i",
   "keywords": [
     "JavaScript Standard Style",
     "bikeshed",
@@ -69,10 +69,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Flet/semistandard.git"
-  },
-  "scripts": {
-    "test": "standard && tape test/*.js"
+    "url": "https://github.com/DimasDMM/semistandard-4i.git"
   },
   "standard": {
     "ignore": "tmp/**"
