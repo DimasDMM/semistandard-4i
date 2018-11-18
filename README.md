@@ -1,4 +1,4 @@
-# JavaScript Semi-Standard Style
+# JS Semistandard 4I Style
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
