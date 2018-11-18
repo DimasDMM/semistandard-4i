@@ -2,6 +2,11 @@
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
+[npm-image]: https://img.shields.io/npm/v/semistandard-4i.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/semistandard-4i
+[downloads-image]: https://img.shields.io/npm/dm/semistandard-4i.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/semistandard-4i
+
 ### One Semicolon for the Dark Lord on his dark throne
 
 All the goodness of [JS Standard Style](https://github.com/standard/standard) with semicolons and 4 spaces indentation.
