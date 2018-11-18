@@ -1,7 +1,7 @@
 {
   "name": "semistandard-4i",
   "description": "All the goodness of JS Standard Style with semicolons and 4 spaces indentation.",
-  "version": "0.0.2-beta",
+  "version": "1.0.0",
   "author": {
     "email": "dimas.95@hotmail.com",
     "name": "Dimas Muñoz",
